@@ -1,0 +1,56 @@
+module.exports = {
+  purge: [
+    './public/index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    './src/*.{js,ts,jsx,tsx}',
+  ],
+  darkMode: 'class',
+  theme: {
+    fontSize: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem',
+      '8xl': '6rem',
+      '9xl': '7rem',
+      '10xl': '10rem',
+    },
+    extend: {
+      colors: {
+        custom: {
+          light: {
+            primaryBackground: '#f4f4f4',
+            secondaryBackground: '#ffffff',
+            primaryText: '#1f1f1f',
+            primaryRed: '#FF0075',
+            secondaryRed: '#FF007520',
+            primaryBlue: '#5D00FF',
+            secondaryBlue: '#5D00FF20',
+            outline: '#00000020',
+          },
+          dark: {
+            // primaryBackground: '#050d1f',
+            primaryBackground: '#040810',
+            // secondaryBackground: '#17133E',
+            secondaryBackground: '#0e1422',
+            primaryText: '#ffffff',
+            primaryRed: '#FF0075',
+            secondaryRed: '#FF007520',
+            primaryBlue: '#5D00FF',
+            secondaryBlue: '#5D00FF20',
+            outline: '#ffffff20',
+          },
+        },
+      },
+    },
+  },
+  variants: {},
+  plugins: [require('@tailwindcss/forms')],
+};
